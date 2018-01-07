@@ -1,10 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+body {
+  background: #b5b5b7;
+  background: -webkit-linear-gradient(to right, #b5b5b7, #677077);
+  background: linear-gradient(to right, #b5b5b7, #677077);
+  /* https://uigradients.com/ */
+}
+
 #container {
-  border: 1px solid black;
-  width: 350px;
-  margin: 0 auto;
+  width: 50%;
+  margin: 10% auto;
+  background-color: #dddddd;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+  color: #252839;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .strikethrough {
-  color: #DDDDDD;
+  color: #677077;
   text-decoration: line-through;
+}
+
+h1 {
+  background-color: #252839;
+  margin: 0;
+  padding: 1% 2%;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #f2b632;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding-left: 2%;
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+}
+
+li:nth-child(odd) {
+  background-color: #eeeeee;
+}
+
+input {
+  font-size: 1.25em;
+  background-color: #b5b5b7;
+  width: 100%;
+  padding: 2%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: #252839;
+  font-family: 'Permanent Marker', cursive;
+  border: 3px solid #252839;
+}
+
+input:focus {
+  background-color: white;
+  outline: none;
 }

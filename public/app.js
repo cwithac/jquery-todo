@@ -8,7 +8,7 @@ $( () => {
 //Element Collection/Generating
 const $container = $('<section/>').attr('id', 'container');
 const $h1Title = $('<h1/>').text('To Do List');
-const $input = $('<input/>').attr('type', 'text');
+const $input = $('<input/>').attr('type', 'text').attr('placeholder', 'Add New To Do');
 const $ul = $('<ul/>');
 const $initialList = ['First', 'Second', 'Third'];
 
