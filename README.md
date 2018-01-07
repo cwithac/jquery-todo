@@ -4,10 +4,12 @@
 
 _To Do App.  Non-persisting, no database attached_.
 
+![image](https://i.imgur.com/2S0Bwjp.png)
+
 ### Technologies
 ```
 - HTML
-- CSS
+- CSS (Mobile Responsive)
 - jQuery
 - OOP
 ```
