@@ -2,11 +2,14 @@
 
 [Hosted](https://jquery-todo-app.herokuapp.com/) & [Repository](https://github.com/cwithac/jquery-todo)
 
+_To Do App.  Non-persisting, no database attached_.
+
 ### Technologies
 ```
 - HTML
 - CSS
 - jQuery
+- OOP
 ```
 
 ### Resources
