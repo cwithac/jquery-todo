@@ -7,20 +7,6 @@ body {
   /* https://uigradients.com/ */
 }
 
-#container {
-  width: 50%;
-  margin: 10% auto;
-  background-color: #dddddd;
-  box-shadow: 0 0 3px rgba(0, 0, 0, .3);
-  color: #252839;
-  font-family: 'Permanent Marker', cursive;
-}
-
-.strikethrough {
-  color: #677077;
-  text-decoration: line-through;
-}
-
 h1 {
   background-color: #252839;
   margin: 0;
@@ -81,6 +67,20 @@ span {
 li:hover span {
 	width: 40px;
 	opacity: 1.0;
+}
+
+#container {
+  width: 50%;
+  margin: 10% auto;
+  background-color: #dddddd;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+  color: #252839;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.strikethrough {
+  color: #677077;
+  text-decoration: line-through;
 }
 
 .fa-plus-square {
