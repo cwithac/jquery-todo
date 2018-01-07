@@ -19,16 +19,24 @@ const app = {
     $ul.each(function(i){
       for (let i = 0; i < $initialList.length; i++) {
         $(this).append('<li><span>X</span> ' + $initialList[i] + '</li>');
+        $('li span').addClass('trash');
       }
     });
     this.intitFunctionality();
   },
   intitFunctionality() {
     this.strikethrough();
+    this.deleteItem();
   },
   strikethrough() {
     $('li').on('click', (e) => {
       $(e.currentTarget).toggleClass('strikethrough');
     });
+  },
+  deleteItem(){
+    $('.trash').on('click', (e) => {
+      e.stopPropagation();
+      $(e.currentTarget).parent().remove();
+    })
   }
 };
