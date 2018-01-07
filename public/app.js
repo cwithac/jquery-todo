@@ -27,6 +27,7 @@ const app = {
   intitFunctionality() {
     this.strikethrough();
     this.deleteItem();
+    this.addItem();
   },
   strikethrough() {
     $('li').on('click', (e) => {
@@ -40,5 +41,14 @@ const app = {
         $(e.currentTarget).parent().remove();
       });
     })
+  },
+  addItem() {
+    $input.on('keypress', (e) => {
+      if (e.which === 13) {
+        let $valueText = $(e.currentTarget).val();
+        $ul.append('<li><span>X</span> ' + $valueText + '</li>');
+        $(e.currentTarget).val('');
+      }
+    });
   }
 };
