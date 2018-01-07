@@ -21,5 +21,14 @@ const app = {
         $(this).append('<li><span>X</span> ' + $initialList[i] + '</li>');
       }
     });
+    this.intitFunctionality();
+  },
+  intitFunctionality() {
+    this.strikethrough();
+  },
+  strikethrough() {
+    $('li').on('click', (e) => {
+      $(e.currentTarget).toggleClass('strikethrough');
+    });
   }
 };
