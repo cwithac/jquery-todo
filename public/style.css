@@ -65,3 +65,12 @@ input:focus {
   background-color: white;
   outline: none;
 }
+
+
+.fa-plus-square {
+  float: right;
+}
+
+.fa-plus-square:before {
+  vertical-align: sub;
+}
