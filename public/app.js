@@ -23,6 +23,7 @@ const app = {
     this.strikethrough();
     this.deleteItem();
     this.addItem();
+    this.showAddOption();
   },
   templateList() {
     //Disabled, used for initial build of template <li>
@@ -54,5 +55,10 @@ const app = {
         $(e.currentTarget).val('');
       }
     });
+  },
+  showAddOption() {
+    $('.fa-plus-square').on('click', () => {
+      $input.fadeToggle();
+    })
   }
 };
