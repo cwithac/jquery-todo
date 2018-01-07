@@ -36,7 +36,9 @@ const app = {
   deleteItem(){
     $('.trash').on('click', (e) => {
       e.stopPropagation();
-      $(e.currentTarget).parent().remove();
+      $(e.currentTarget).parent().fadeOut(500, () => {
+        $(e.currentTarget).parent().remove();
+      });
     })
   }
 };
