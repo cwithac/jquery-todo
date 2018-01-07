@@ -38,7 +38,6 @@ ul {
 }
 
 li {
-  padding-left: 2%;
   cursor: pointer;
   height: 40px;
   line-height: 40px;
@@ -58,14 +57,31 @@ input {
   -moz-box-sizing: border-box;
   color: #252839;
   font-family: 'Permanent Marker', cursive;
-  border: 3px solid #252839;
+  border: 3px solid rgba(0,0,0,0);
 }
 
 input:focus {
   background-color: white;
   outline: none;
+  border: 3px solid #252839;
 }
 
+span {
+	background: #f2b632;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1.0;
+}
 
 .fa-plus-square {
   float: right;
@@ -78,5 +94,9 @@ input:focus {
 @media (max-width: 650px) {
   #container {
     width: 90%;
+  }
+  span {
+    width: 40px;
+    opacity: 1.0;
   }
 }
