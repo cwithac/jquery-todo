@@ -19,7 +19,6 @@ const app = {
     $ul.each(function(i){
       for (let i = 0; i < $initialList.length; i++) {
         $(this).append('<li><span>X</span> ' + $initialList[i] + '</li>');
-        $('li span').addClass('trash');
       }
     });
     this.intitFunctionality();
@@ -30,12 +29,12 @@ const app = {
     this.addItem();
   },
   strikethrough() {
-    $('li').on('click', (e) => {
+    $('ul').on('click', 'li', (e) => {
       $(e.currentTarget).toggleClass('strikethrough');
     });
   },
   deleteItem(){
-    $('.trash').on('click', (e) => {
+    $('ul').on('click', 'span', (e) => {
       e.stopPropagation();
       $(e.currentTarget).parent().fadeOut(500, () => {
         $(e.currentTarget).parent().remove();
